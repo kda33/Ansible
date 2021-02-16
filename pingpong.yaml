@@ -1,0 +1,11 @@
+---
+- name: Connection to staging_servers
+  hosts: all
+  become: yes  #root -b
+
+  tasks:
+  - name: Check and print LINUX Version
+    debug: var=ansible_os_family
+    
+  - name: Ping to servers
+    ping:

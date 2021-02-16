@@ -1,0 +1,3 @@
+
+[staging_servers]
+linux   ansible_host=18.188.146.177 
